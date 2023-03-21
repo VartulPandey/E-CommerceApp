@@ -4,6 +4,7 @@ const cartSlice = createSlice({
   name: "cart",
   initialState: {
     items: [],
+    likedItems:[]
   },
   reducers: {
     addItem: (state, action) => {
@@ -29,8 +30,16 @@ const cartSlice = createSlice({
       state.items[action.payload.index].numberOfItem =
         action.payload.numberofItems;
     },
+
+    addLikedItem:(state,action)=>{
+      state.likedItems.push(action.payload);
+    },
+    removeLikedItem: (state, action) => {
+      state.likedItems.splice(action.payload, 1);
+    },
+    
   },
 });
 
-export const { addItem, updateNumberOfItem, removeItem } = cartSlice.actions;
+export const { addItem, updateNumberOfItem, removeItem,addLikedItem,removeLikedItem} = cartSlice.actions;
 export default cartSlice.reducer;

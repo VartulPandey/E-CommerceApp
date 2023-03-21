@@ -1,16 +1,16 @@
 export const CarosuelInfo = [
   {
     id: "Tf",
-    img: "https://images.herzindagi.info/image/2022/Sep/tropical-outfits.jpg",
-    text: "Summer Collection",
-    detail: "Don't Compromise on style! Get Flat 30% OFF For New Arrivals",
-    buttonText: "Show Now",
-    textLeft: "6vw",
-    textTop: "20%",
-    detailLeft: "68vw",
-    detailTop: "30%",
-    buttonLeft: "6vw",
-    buttonTop: "75%",
+    img: "https://wallpaperaccess.com/full/1437673.jpg",
+    text: "Trendy Fashion",
+    detail: "UP TO 80% OFF DON'T MISS THE CHANCE",
+    buttonText: "SHOP NOW",
+    textLeft: "208%",
+    textTop: "10%",
+    detailLeft: "208%",
+    detailTop: "60%",
+    buttonLeft: "208%",
+    buttonTop: "80%",
   },
   {
     id: "denim",
@@ -18,26 +18,27 @@ export const CarosuelInfo = [
     text: "MEET OUR DENIM",
     detail: "these hues of blue are always cool.",
     buttonText: "DISCOVER NOW",
-    textLeft: "164vw",
+    textLeft: "166%",
     textTop: "0%",
-    detailLeft: "165vw",
+    detailLeft: "166%",
     detailTop: "65%",
-    buttonLeft: "165vw",
-    buttonTop: "85%",
+    buttonLeft: "166%",
+    buttonTop: "82%",
   },
   {
     id: "Tf",
-    img: "https://wallpaperaccess.com/full/1437673.jpg",
-    text: "Trendy Fashion",
-    detail: "UP TO 80% OFF DON'T MISS THE CHANCE",
-    buttonText: "SHOP NOW",
-    textLeft: "206vw",
-    textTop: "10%",
-    detailLeft: "206vw",
-    detailTop: "60%",
-    buttonLeft: "206vw",
-    buttonTop: "80%",
+    img: "https://images.herzindagi.info/image/2022/Sep/tropical-outfits.jpg",
+    text: "Summer Collection",
+    detail: "Don't Compromise on style! Get Flat 30% OFF For New Arrivals",
+    buttonText: "Show Now",
+    textLeft: "4%",
+    textTop: "20%",
+    detailLeft: "70%",
+    detailTop: "30%",
+    buttonLeft: "6%",
+    buttonTop: "75%",
   },
+   
   {
     id: "glasses",
     img: "https://wwd.com/wp-content/uploads/2022/04/LAYOUT-440x285-P-S22-DP4-INTL_HD.jpg?crop=0px%2C0px%2C5197px%2C2908px&resize=1000%2C563",
@@ -720,6 +721,7 @@ export const productDetail = {
     },
     descrip:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    sizeType:"number",
     sizes: {
       6: 10795,
       7: 10849,
@@ -742,7 +744,8 @@ export const productDetail = {
     },
     descrip:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    sizes: {
+      sizeType:"number",
+      sizes: {
       6: 10295,
       7: 10349,
       8: 10399,
@@ -764,7 +767,8 @@ export const productDetail = {
     },
     descrip:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    sizes: {
+      sizeType:"number",
+      sizes: {
       6: 10499,
       7: 10549,
       8: 10599,
@@ -786,7 +790,8 @@ export const productDetail = {
     },
     descrip:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    sizes: {
+      sizeType:"number",
+      sizes: {
       6: 10999,
       7: 11149,
       8: 11199,

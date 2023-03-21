@@ -4,6 +4,7 @@ const Content=styled.div`
     display: flex;
     background-color: #096b6b;
     height: 30px;
+    width: 100%;
     justify-content: center;
     align-items: center;
     
@@ -11,7 +12,9 @@ const Content=styled.div`
 const Text=styled.span`
 color: white;
 font-size: 15px;
-
+@media only screen and (max-width:340px){
+  font-size: 10px;
+}
 `
 
 const TopOffer = () => {

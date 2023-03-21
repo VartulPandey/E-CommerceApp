@@ -3,14 +3,23 @@ import { createSlice } from "@reduxjs/toolkit";
 const totalPriceSlice=createSlice({
     name:"totalPrice",
     initialState:{
-        total:0
+        totalPrice:0,
+        totalItem:0,
+        likedItems:0
     },
     reducers:{
         addPrice:(state,action)=>{
-            state.total+=action.payload;
-        }
+            state.totalPrice+=action.payload;
+        },
+        totalItem:(state,action)=>{
+                state.totalItem+=action.payload;
+        },
+        totalLikedItem:(state,action)=>{
+            state.likedItems+=action.payload
+          }
+    
     }
 })
 
-export const{addPrice}=totalPriceSlice.actions
+export const{addPrice,totalItem,totalLikedItem}=totalPriceSlice.actions
 export default totalPriceSlice.reducer
