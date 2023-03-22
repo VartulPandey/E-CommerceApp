@@ -267,14 +267,14 @@ const Carousel = () => {
               <CarosuelDetail left={data.detailLeft} top={data.detailTop}>
                 {data.detail}
               </CarosuelDetail>
-              <CorosuelButton left={data.buttonLeft} top={data.buttonTop}>
-                <Link
-                  to={`/product/${data.id}`}
-                  style={{ textDecoration: "none", color: "white" }}
-                >
+              <Link
+                to={`/product/${data.id}`}
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <CorosuelButton left={data.buttonLeft} top={data.buttonTop}>
                   {data.buttonText}
-                </Link>
-              </CorosuelButton>
+                </CorosuelButton>
+              </Link>
             </div>
           );
         })}

@@ -44,14 +44,16 @@ const OrderItem = styled.div`
 
 const EmptyCart = styled.div`
   background-color: ${(props) => (props.isDark ? "#202124" : "white")};
-  height: 80vh;
-  width: 100%;
-  background-image: url("https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-png-image-download-pngm-2.png");
+  height: 50vh;
+  width: 100vw;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/4379/4379925.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: 70%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: baseline;
   @media only screen and (max-width: 768px) {
     height: 70vh;
   }
@@ -60,11 +62,12 @@ const EmptyCart = styled.div`
   }
 `;
 const EmptyCartSpan = styled.span`
+  counter-reset: "#f5f7f7";
   color: ${(props) => (props.isDark ? "#f5f7f7" : "#202124")};
-  font-size: 2rem;
-  font-weight: 600;
-  margin-top: 12vh;
-  margin-left: 10vw;
+  font-size: 2.8rem;
+  font-weight: 700;
+  /* padding-left: 52vh; */
+  /* margin-left: ?10vw; */
   @media only screen and (max-width: 768px) {
     font-size: 1.5rem;
   }
@@ -96,17 +99,17 @@ const LikedItem = () => {
         <EmptyCart isDark={isDark}>
           <EmptyCartSpan isDark={isDark}>
             There is no liked element
-            <Link
-              to="/"
-              style={{
-                fontSize: "small",
-                marginLeft: "20px",
-                color: isDark ? "red" : "blue",
-              }}
-            >
-              (Continue Shopping)
-            </Link>
           </EmptyCartSpan>
+          <Link
+            to="/"
+            style={{
+              // fontSize: "",
+              marginLeft: "1%",
+              color: isDark ? "red" : "blue",
+            }}
+          >
+            (Make Your Wishlist)
+          </Link>
         </EmptyCart>
       </>
     );
