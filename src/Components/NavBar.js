@@ -9,7 +9,7 @@ import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import { toggleMode } from "../utils/ToggleSlice";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Content = styled.div`
   background-color: ${(props) => (props.isDarkTheme ? "#202124" : "#f5f7f7")};
@@ -148,6 +148,18 @@ const NavBar = () => {
   const totalItem = useSelector((store) => store.totalPrice.totalItem);
   const totalLikedItem = useSelector((store) => store.totalPrice.likedItems);
   const [menuVisible, setMenuVisible] = useState(false);
+  const [completeName,setCompleteName]=useState(false)
+  const [appName, setAppName] = useState("");
+  let appNames = "Thrifting";
+  let index = 1;
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAppName(appNames.slice(0, index))
+      index == appNames.length ? index = 1 : index++
+    }, 500);
+   
+    return () => clearInterval(interval);
+  }, []);
 
   function ThemeButtonClicked() {
     dispach(toggleMode());
@@ -165,12 +177,14 @@ const NavBar = () => {
       <AppName>
         <Link
           to="/"
+          onMouseOver={()=>setCompleteName(true)}
+          onMouseLeave={()=>setCompleteName(false)}
           style={{
             textDecoration: "none",
             color: isDarkTheme ? "#f5f7f7" : "#202124",
           }}
         >
-          CLOTH_HOUSE
+          Digital_{completeName?"Thrifting":appName}
         </Link>
       </AppName>
       <Cart>

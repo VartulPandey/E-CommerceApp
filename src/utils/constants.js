@@ -641,8 +641,8 @@ export const productDetail = {
         "https://cdn.shopify.com/s/files/1/0341/4805/7228/products/34052O_6_1800x1800.jpg?v=1668679630",
       ],
       "#3a465e": [
-        "https://cdn.shopify.com/s/files/1/0341/4805/7228/products/C7-16_1800x1800.jpg?v=1668679618",
         "https://cdn.shopify.com/s/files/1/0341/4805/7228/products/34051O_1_1800x1800.jpg?v=1668679620",
+        "https://cdn.shopify.com/s/files/1/0341/4805/7228/products/C7-16_1800x1800.jpg?v=1668679618",
         "https://cdn.shopify.com/s/files/1/0341/4805/7228/products/34051O_7_1800x1800.jpg?v=1668679624",
         "https://cdn.shopify.com/s/files/1/0341/4805/7228/products/34051O_4_1800x1800.jpg?v=1668679630",
       ],
