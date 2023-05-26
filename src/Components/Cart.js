@@ -161,6 +161,8 @@ const EmptyCartSpan = styled.span`
 `;
 const Cart = () => {
   const cartItem = useSelector((store) => store.cart.items);
+  const totalItem = useSelector((store) => store.totalPrice.totalItem);
+  const totalLikedItem = useSelector((store) => store.totalPrice.likedItems);
   const totalCost = useSelector((store) => store.totalPrice.totalPrice);
   const isDark = useSelector((store) => store.toggle.isDark);
   if (cartItem.length == 0)
@@ -193,10 +195,10 @@ const Cart = () => {
         <Link to="/">
           <Button>CONTINUE SHOPPING</Button>
         </Link>
-        <Link style={{ fontSize: ".8rem", color: isDark ? "red" : "blue" }}>
-          Your Wishlist(0)
+        <Link to="/liked" style={{ fontSize: ".8rem", color: isDark ? "red" : "blue" }}>
+          Your Wishlist({totalLikedItem})
         </Link>
-        <Button>_CHECKOUT NOW (0)</Button>
+        <Button>_CHECKOUT NOW ({totalItem})</Button>
       </Container>
 
       <OrderItem>

@@ -92,7 +92,10 @@ const LikedItem = () => {
   const cartItem = useSelector((store) => store.cart.items);
   const isDark = useSelector((store) => store.toggle.isDark);
   const likedItem = useSelector((store) => store.cart.likedItems);
+  const totalItem = useSelector((store) => store.totalPrice.totalItem);
+  const totalLikedItem = useSelector((store) => store.totalPrice.likedItems);
 
+ 
   if (likedItem.length == 0)
     return (
       <>
@@ -124,9 +127,9 @@ const LikedItem = () => {
           <Button>CONTINUE SHOPPING</Button>
         </Link>
         <Link style={{ fontSize: ".8rem", color: isDark ? "red" : "blue" }}>
-          Your Wishlist(0)
+          Your Wishlist({totalLikedItem})
         </Link>
-        <Button>_CHECKOUT NOW (0)</Button>
+        <Link to="/cart"><Button style={{color:"white"}}>__MOVE TO CART ({totalItem})__</Button></Link>
       </Container>
 
       <Wrapper>
