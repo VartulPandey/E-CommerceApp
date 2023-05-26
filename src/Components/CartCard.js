@@ -200,8 +200,8 @@ const CartCard = ({ data, index }) => {
             style={{
               backgroundColor: data.color,
               borderRadius: "100%",
-              padding:"1px",
-              color:data.color
+              padding: "1px",
+              color: data.color,
             }}
           >
             col
@@ -216,11 +216,11 @@ const CartCard = ({ data, index }) => {
       <CartPrice>
         <Elements>
           <Icon
-            onClick={() => {
+            onClick={() =>
               numberOfItem != 1
                 ? removeItemFromCart(productDetail[data?.id].sizes[data.size])
-                : null;
-            }}
+                : null
+            }
           >
             <RemoveOutlinedIcon
               style={{

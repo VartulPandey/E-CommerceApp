@@ -83,7 +83,6 @@ const Name = styled.span`
   @media only screen and (max-width: 768px) {
     max-width: 100%;
   }
-  
 `;
 const Company = styled.span`
   color: ${(props) => (props.isDark ? "#f5f7f7" : "#202124")};
@@ -92,7 +91,7 @@ const Company = styled.span`
   @media only screen and (max-width: 1024px) {
     max-width: 100%;
   }
- 
+
   @media only screen and (max-width: 480px) {
     max-width: 100%;
   }
@@ -104,13 +103,12 @@ const Description = styled.span`
   margin-top: 4vh;
   @media only screen and (max-width: 1024px) {
     margin-top: 2vh;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
-  
+
   @media only screen and (max-width: 480px) {
     max-width: 100%;
   }
-  
 `;
 const Price = styled.span`
   color: ${(props) => (props.isDark ? "#f5f7f7" : "#202124")};
@@ -122,7 +120,6 @@ const Price = styled.span`
   @media only screen and (max-width: 768px) {
     max-width: 100%;
   }
-  
 `;
 const Select = styled.select`
   margin-left: 1vw;
@@ -217,8 +214,8 @@ const Button = styled.button`
   cursor: pointer;
   border: 1px solid blue;
   padding: 0.5rem;
-  @media only screen and (max-width:1024px){
-    margin-left:18vw;
+  @media only screen and (max-width: 1024px) {
+    margin-left: 18vw;
   }
 `;
 const VerticalImage = styled.div`
@@ -359,9 +356,9 @@ const ProductDetail = () => {
         <Elements>
           <Items>
             <Icon
-              onClick={() => {
-                numberOfItem != 1 ? setNumberOfItem(numberOfItem - 1) : null;
-              }}
+              onClick={() =>
+                numberOfItem != 1 ? setNumberOfItem(numberOfItem - 1) : null
+              }
             >
               <RemoveOutlinedIcon
                 style={{
